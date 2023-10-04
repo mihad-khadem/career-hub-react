@@ -1,6 +1,7 @@
 import { FaMapLocationDot, FaMoneyBill1Wave } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const Job = ({ job }) => {
-  const { logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = job;
+  const {id, logo, job_title, company_name, remote_or_onsite, location, job_type, salary } = job;
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
@@ -22,7 +23,9 @@ const Job = ({ job }) => {
         </div>
 
         <div className="card-actions justify-center">
+          <Link to={`/job/${id}`}>
           <button className="btn bg-[#7E90FE] text-white">View Details</button>
+          </Link>
         </div>
       </div>
     </div>

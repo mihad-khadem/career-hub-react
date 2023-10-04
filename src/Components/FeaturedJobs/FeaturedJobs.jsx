@@ -26,7 +26,7 @@ const FeaturedJobs = () => {
         ))}
       </div>
       
-      <div className={dataLength === jobs.length && 'hidden'}>
+      <div className={dataLength === jobs.length ? 'hidden' : ''}>
         <div className="flex justify-center">
           <button
             onClick={() => setDataLength(jobs.length)}

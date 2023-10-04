@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
     const links = <>
@@ -42,7 +42,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-[#7E90FE] text-white">Apply Now</a>
+        <Link to='/jobs'><a className="btn bg-[#7E90FE] text-white">Apply Now</a></Link>
       </div>
     </div>
   );
